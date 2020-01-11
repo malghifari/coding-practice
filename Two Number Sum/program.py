@@ -17,11 +17,11 @@ def twoNumberSum2(array, targetSum):
     # Write your code here.
     isExist = {}
     for i in range(len(array)):
-        isExist[array[i]] = True
-    for i in range(len(array)):
         key = targetSum - array[i]
-        if key != array[i] and key in isExist:
-            return [array[i], key] 
+        if key in isExist:
+            return [array[i], key]
+        else:
+            isExist[array[i]] = True 
     return []
 
 # Solution 3
