@@ -4,17 +4,17 @@ function moveElementToEnd(array, toMove) {
 		O(N) time
 		O(N) space
 	*/
-	// const choosenNumber = []
-	// const restNumber = []
-	// const answer = []
-	// for (let i=0; i<array.length; i++) {
-	// 	if (array[i] === toMove) {
-	// 		choosenNumber.push(array[i]);
-	// 	} else {
-	// 		restNumber.push(array[i]);
-	// 	}
-	// }
-	// return restNumber.concat(choosenNumber);
+	const choosenNumber = []
+	const restNumber = []
+	const answer = []
+	for (let i=0; i<array.length; i++) {
+		if (array[i] === toMove) {
+			choosenNumber.push(array[i]);
+		} else {
+			restNumber.push(array[i]);
+		}
+	}
+	return restNumber.concat(choosenNumber);
 	/* Solution 1 */
 	
 	/* 
